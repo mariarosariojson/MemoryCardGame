@@ -8,34 +8,41 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(117, 117, 98);
+  background-color: rgb(128, 128, 112);
 }
 
 header {
-  margin: auto;
+  display: flex;
+  margin: 30px auto;
   color: whitesmoke;
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 1px 2px 5px rgb(59, 59, 59);
+  font-size: 32px;
 }
 
 .memory {
   display: flex;
   flex-wrap: wrap;
-  width: 640px;
-  height: 640px;
+  padding: 20px;
+  background-color: rgb(237, 237, 237);
+  border: 1px solid rgb(158, 158, 158) ;
+  width: 1040px;
+  height: 550px;
   margin: auto;
   perspective: 1000px;
 }
 
 .card {
-  width: 23%;
-  height: 30%;
+  width: 7rem;
+  height: 9rem;
   position: relative;
   margin: auto;
   transform-style: preserve-3d;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .flip {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .front,
@@ -45,10 +52,10 @@ header {
   position: absolute;
   border-radius: 5px;
   background-color: rgb(224, 224, 224);
-  box-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px rgb(109, 109, 109);
   backface-visibility: hidden;
 }
 
 .front {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }

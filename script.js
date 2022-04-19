@@ -20,14 +20,14 @@ function pickCard() {
       setTimeout(() => {
         firstFlippedCard.classList.remove("flip");
         secondFlippedCard.classList.remove("flip");
-      }, 1100);
+      }, 1000);
     }
   }
 }
 
 (function shuffleBoard() {
   cards.forEach((card) => {
-    let randomize = Math.floor(Math.random() * 12);
+    let randomize = Math.floor(Math.random() * 24);
     card.style.order = randomize;
   });
 })();
